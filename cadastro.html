@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Cadastro - Costa Coral</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #30636B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 880px;
+        }
+
+        .access-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+        }
+
+        .form-box {
+            background-color: white;
+            display: flex;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 1200px;
+            width: 100%;
+            height: 770px;
+        }
+
+        .form-content {
+            padding: 20px;
+            flex: 1;
+            width: 100%;
+        }
+
+        .form-content h1 {
+            color: #30636B;
+            margin-bottom: 10px;
+            font-size: 28px;
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .form-endereco {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-endereco .input-group {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-endereco .input-group label {
+            margin-bottom: 5px;
+        }
+
+        .form-endereco .input-group input {
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        .form-content label {
+            display: block;
+            margin-bottom: 3px;
+            color: #30636B;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .form-content input:not([type="checkbox"]) {
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+            border: 1px solid #30636B;
+            border-radius: 4px;
+            background-color: #ffffff22;
+            color: #30636B;
+            font-size: 13px;
+            background: #dedddd;
+            border: 1px solid #cccccc;
+            padding: 8px 15px;
+            display: block;
+        }
+
+        .form-content input::placeholder {
+            color: #30636B;
+        }
+
+        .novidades {
+            width: calc(100% - 20px);
+            background: #dedddd;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            padding: 8px 15px;
+            display: block;
+        }
+
+        .form-content small {
+            display: inline;
+            color: #30636B;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .btn-enviar {
+            width: calc(100% + 10px);
+            padding: 10px 15px;
+            background-color: #e46816;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .btn-enviar:hover {
+            background-color: #d15a10;
+        }
+
+        .image-box {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-box img {
+            width: 465px;
+            height: 760px;
+            object-fit: cover;
+            margin-right: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="access-container">
+        <div class="form-box">
+            <div class="form-content">
+                <h1>Cadastre-se!</h1>
+                <form action="#" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="CPF">
+                    
+                    <div class="form-endereco">
+                        <div class="input-group">
+                            <label for="cep">CEP:</label>
+                            <input type="text" id="cep" name="cep" placeholder="CEP">
+                        </div>
+                        <div class="input-group">
+                            <label for="rua">Rua:</label>
+                            <input type="text" id="rua" name="rua" placeholder="Rua">
+                        </div>
+                    </div>
+                    
+                    <div class="form-endereco">
+                        <div class="input-group">
+                            <label for="bairro">Bairro:</label>
+                            <input type="text" id="bairro" name="bairro" placeholder="Bairro">
+                        </div>
+                        <div class="input-group">
+                            <label for="numero">Número:</label>
+                            <input type="text" id="numero" name="numero" placeholder="Número">
+                        </div>
+                    </div>
+                    
+                    <div class="form-endereco">
+                        <div class="input-group">
+                            <label for="cidade">Cidade:</label>
+                            <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+                        </div>
+                        <div class="input-group">
+                            <label for="estado">Estado:</label>
+                            <input type="text" id="estado" name="estado" placeholder="Estado">
+                        </div>
+                    </div>
+                    
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" placeholder="Telefone">
+                    
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Insira uma senha">
+                    
+                    <label for="confirmeSenha">Confirme sua Senha:</label>
+                    <input type="password" id="confirmeSenha" name="confirmeSenha" placeholder="Confirme sua senha">
+                    
+                    <label for="novidades">Novidades:</label>
+                    <div class="novidades">
+                        <input type="checkbox" id="novidades"/>
+                        <small>Desejo receber novidades por Email</small>
+                    </div>
+                    <button type="button" class="btn-enviar" onclick="validar()">Enviar</button>
+                </form>
+            </div>
+            <div class="image-box">
+                <img src="imagens/BannerCadastro.jpg" alt="Imagem de Cadastro">
+            </div>
+        </div>
+    </div>
+    <script>
+        function validar() {
+            var nome = document.getElementById("nome");
+            var email = document.getElementById("email");
+            var cpf = document.getElementById("cpf");
+            var cep = document.getElementById("cep");
+            var rua = document.getElementById("rua");
+            var bairro = document.getElementById("bairro");
+            var numero = document.getElementById("numero");
+            var cidade = document.getElementById("cidade");
+            var estado = document.getElementById("estado");
+            var telefone = document.getElementById("telefone");
+            var senha = document.getElementById("senha");
+            var confirmeSenha = document.getElementById("confirmeSenha");
+            var novidades = document.getElementById("novidades");
+
+            if (nome.value == "") {
+                alert("Nome não informado");
+                nome.focus();
+                return;
+            }
+            if (email.value == "") {
+                alert("Email não informado");
+                email.focus();
+                return;
+            }
+            if (cpf.value == "") {
+                alert("CPF não informado");
+                cpf.focus();
+                return;
+            }
+            if (cep.value == "") {
+                alert("CEP não informado");
+                cep.focus();
+                return;
+            }
+            if (rua.value == "") {
+                alert("Rua não informada");
+                rua.focus();
+                return;
+            }
+            if (bairro.value == "") {
+                alert("Bairro não informado");
+                bairro.focus();
+                return;
+            }
+            if (numero.value == "") {
+                alert("Número não informado");
+                numero.focus();
+                return;
+            }
+            if (cidade.value == "") {
+                alert("Cidade não informada");
+                cidade.focus();
+                return;
+            }
+            if (estado.value == "") {
+                alert("Estado não informado");
+                estado.focus();
+                return;
+            }
+            if (telefone.value == "") {
+                alert("Telefone não informado");
+                telefone.focus();
+                return;
+            }
+            if (senha.value == "") {
+                alert("Senha não informada");
+                senha.focus();
+                return;
+            }
+            if (confirmeSenha.value == "") {
+                alert("Confirmação de senha não informada");
+                confirmeSenha.focus();
+                return;
+            }
+            if (senha.value != confirmeSenha.value) {
+                alert("Senhas não conferem");
+                confirmeSenha.focus();
+                return;
+            }
+
+            alert("Formulário enviado com sucesso!");
+            window.location.href = "index.html";  
+        }
+    </script>
+</body>
+</html>

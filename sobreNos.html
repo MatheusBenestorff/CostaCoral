@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costa-Coral</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+<style>
+    body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #30636B;
+}
+
+header {
+    background-color: #30636B;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: auto;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-links a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 10px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li::after {
+    content: '|';
+    color: white;
+    margin-left: 10px;
+}
+
+.nav-links li:last-child::after {
+    content: '';
+}
+
+.nav-links a:hover {
+    color: #e46816;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-right input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-entrar,
+.btn-entrar a {
+    padding: 5px 15px;
+    background-color: #e46816;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-entrar:hover {
+    background-color: #d15a10;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 42px;
+    color: white;
+}
+
+.info {
+    width: 60%;
+    margin-left: 18%;
+    font-size: 25px;
+    margin-top: 10%;
+    color: #f9f5f5;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
+.footer-content {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #e46816;
+}
+</style>
+    </head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="Logo da Empresa">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobreNos.html">Sobre nós</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="Hoteis.html">Hoteis</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+            <div class="nav-right">
+                <input type="text" placeholder="Pesquisar...">
+                <button class="btn-entrar">Entrar</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <img src="img/banner.jpg" alt="Banner da Empresa">
+            <div class="banner-text">
+                Encontre os melhores destinos da América do Sul
+            </div>
+        </div>
+        <Section>
+            <div class="info">
+                <h2>Bem-vindos à Costa-Coral</h2>
+                <p>A Costa-Coral nasceu de uma paixão compartilhada por explorar as praias
+                    mais lindas e escondidas da América Latina. Fundada em 13 de julho de 2022,nossa missão é
+                    conectar viajantes a destinos paradisíacos e proporcionar experiências únicas e inesquecíveis.
+                </p>
+                <h2>Nossa Inspiração</h2>
+                <p>A ideia da Costa-Coral surgiu durante uma viagem à costa caribenha da Colômbia
+                    Um grupo de amigos, apaixonados pela natureza e por viagens, ficou maravilhado
+                    com a beleza das praias e com a hospitalidade das comunidades locais. Foi então
+                    que decidimos que queríamos compartilhar essas joias escondidas com o mundo,
+                    ajudando outros a descobrir e aproveitar esses paraísos.</p>
+                <h2>Nossa Missão</h2>
+                <p>Na Costa-Coral, acreditamos que cada viagem deve ser uma aventura única. Somos especializados
+                    em criar itinerários personalizados que se adaptam aos gostos e necessidades de cada
+                    viajante.Quer você queira relaxar em uma praia isolada, explorar recifes de corais vibrantes ou
+                    mergulhar na cultura local, estamos aqui para tornar seus sonhos de viagem realidade.</p>
+                <h2>Nosso Compromisso</h2>
+                <p>Estamos comprometidos em promover um turismo sustentável e responsável.
+                    Trabalhamos em estreita colaboração com comunidades locais para garantir
+                    que nossas viagens beneficiem tanto os viajantes quanto os moradores das áreas
+                    que visitamos. Queremos que cada visita deixe uma marca positiva e duradoura.</p>
+            </div>
+        </Section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Costa Coral. Todos os direitos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="#politica-de-privacidade">Política de Privacidade</a></li>
+                <li><a href="#termos-de-uso">Termos de Uso</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

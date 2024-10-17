@@ -1,0 +1,284 @@
+body {
+    background-color: #30636B;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #30636B;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: auto;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+   
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-links a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 10px 10px;
+    transition: color 0.3s ease;
+   
+}
+
+.nav-links li::after {
+    content: '|';
+    color: white;
+    
+    margin-left: 10px;
+}
+
+.nav-links li:last-child::after {
+    content: '';
+}
+
+.nav-links a:hover {
+    color: #e46816;
+    
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-right input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-entrar {
+    padding: 5px 15px;
+    background-color: #e46816;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.btn-entrar:hover {
+    background-color: #d15a10;
+  
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 42px;
+    color: white;
+}
+
+.video {
+    width: 860px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+
+}
+
+.post-article {
+    width: 60%;
+    margin-left: 18%;
+    font-size: 25px;
+    margin-top: 10%;
+    color: #f9f5f5;
+}
+
+.galleri-blog {
+    display: flex;
+    padding: left 40%;
+    gap: 45px;
+    height: 600px;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.galleri-blog:hover {
+    transform: scale(1.1);
+}
+
+.galleri-img-yuco-arg {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 600px;
+    height: 450px;
+}
+
+.galleri-img-reta {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 1200px;
+    height: 600px;
+}
+
+.galleri-img-bahia {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 1200px;
+    height: 600px;
+}
+
+.galleri-img-cayo {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 600px;
+    height: 450px;
+}
+
+.galleri-img-cayoSombrero {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 600px;
+    height: 450px;
+
+}
+
+.galleri-img-tuja {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 600px;
+    height: 450px;
+}
+
+.galleri-img-noronha {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 600px;
+    height: 450px;
+}
+
+.galleri-img-ilhaGrande {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 600px;
+    height: 450px;
+}
+
+.galleri-img-Dojulião {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 600px;
+    height: 450px;
+}
+
+.galleri-img-BahiaInglesa {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 600px;
+    height: 450px;
+}
+
+.galleri-img-Caleta-lilco {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 600px;
+    height: 450px;
+}
+
+.galleri-img-LagunaVerde {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 600px;
+    height: 450px;
+}
+
+.galleri-img-SanAndres {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 600px;
+    height: 450px;
+}
+
+.galleri-img-neguaje {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 600px;
+    height: 450px;
+}
+
+.galleri-img-cinto {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 600px;
+    height: 450px;
+}
+
+.footer-content {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #e46816;
+}
